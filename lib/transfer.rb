@@ -11,7 +11,7 @@ def initialize(sender, receiver, amount)
 end 
 
 def valid?
-  if @sender.valid? && @receiver.valid?
+  if @sender.valid? && @receiver.valid? && @sender.balance >= @amount
     return true
   else
     false
