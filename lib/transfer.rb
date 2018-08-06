@@ -19,7 +19,7 @@ end
 end
 
 def execute_transaction
-  if self.valid? && self.@status = 'pending'
+  if self.valid? && self.status = 'pending'
     @receiver.deposit(@amount)
     @sender.balance = @sender.balance - @amount
     @status = 'complete'
