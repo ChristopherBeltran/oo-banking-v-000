@@ -26,7 +26,6 @@ end
 
 def close_account
   self.status == 'closed'
-  return self.status
 end 
 
 
