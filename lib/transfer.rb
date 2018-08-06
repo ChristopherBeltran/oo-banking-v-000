@@ -1,5 +1,7 @@
 class Transfer
+  attr_accessor :sender, 
   
   
-def in
+def initialize
+  
 end
