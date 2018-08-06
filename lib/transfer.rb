@@ -19,18 +19,7 @@ end
 end
 
 def execute_transaction
-  if self.valid?
-    counter = 0
-  until counter == 1 
+  counter = 0
+  while self.vaild? == true && counter = 0
   @receiver.balance = @receiver.balance + @amount
   @sender.balance = @sender.balance - @amount
-  @status = 'complete'
-  counter += 1
-else 
-  @status = 'rejected'
-  return
-  "Transaction rejected. Please check your account balance."
-end 
-end 
-end
-end 
