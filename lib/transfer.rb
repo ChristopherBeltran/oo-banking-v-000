@@ -23,3 +23,10 @@ def execute_transaction
   while self.vaild? == true && counter = 0
   @receiver.balance = @receiver.balance + @amount
   @sender.balance = @sender.balance - @amount
+  @status = 'complete'
+  counter += 1
+else 
+  @status = 'rejected'
+end 
+end 
+end 
