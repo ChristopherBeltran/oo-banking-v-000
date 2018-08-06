@@ -25,6 +25,7 @@ def execute_transaction
   @sender.balance = @sender.balance - @amount
   @status = 'complete'
   counter += 1
+end 
 else 
   @status = 'rejected'
 end 
