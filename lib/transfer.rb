@@ -31,6 +31,7 @@ end
 
 def reverse_transfer
   if @status == 'complete'
+    @receiver.balance = 
     
 end 
 
